@@ -1,32 +1,96 @@
 *{
     margin: 0px;
     padding: 0%;
+    
 }
+
+
+/*  nav bar */
+.custom-navbar{
+  background-color: #FFFFFF;
+}
+/* Home Carosal */
+
+#carouselExampleIndicators{
+  height: 80vh;
+  overflow: hidden;
+}
+.carousel-inner{
+  height: 100%;
+
+}
+.carousel-item{
+  height: 100%;
+}
+
+carousel-item img {
+  object-fit: cover; 
+  height: 100%; 
+}
+
+
+
 /* Join us & read more  */
 .maincarosal {
   
-    padding-bottom: 600px;
     padding-left: 450px;
+    margin-bottom: 50px;
 
 
+}#qot {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
 }
-#qot{
+
+#fitclr {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btn1 {
+  background-color: #4CAF50;
+  color: white;
+  margin-right: 10px;
+}
+
+#btn1 a {
+  color: white;
+  text-decoration: none;
+}
+
+#btn1:hover {
+  background-color:rgb(50, 55, 42);
+}
+
+#btn2 {
+  background-color: #FCD581;
   color: white;
 }
-#fitclr{
-    color: red;
+
+#btn2:hover {
+  background-color: rgb(50, 55, 42);
 }
-#btn1 {
-    border-radius: 8px;
-    background-color: rgb(216, 227, 205);
-    border-color: rgb(56, 62, 48); 
-      height: 35px;
+
+.sticky-top{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 #btn2{
   
 border-radius: 8px;
  border-color: rgb(56, 62, 48); 
- height: 35px;
+ height: 46px;
 }
 /*  about us text   */
 #abtus{
@@ -37,20 +101,35 @@ border-radius: 8px;
    
 }
 .counter2{
-    padding: 20px  100px 20px;
+    padding: 70px  100px 70px;
 } 
 .counter3{
-    padding: 20px 100px 20px;
+    padding: 70px 100px 70px;
 }
 
 #sec{
-    padding: 20px 100px 20px;
+    padding: 70px 100px 70px;
     background-color: firebrick;
 }
 .h3, h3 {
     font-weight: bold;
     font-size: 2rem;
     color: linen;
+}
+/* counter */
+
+.counter {
+  background-color: #FFF8E8;
+  text-align: center;
+  padding: 50px 0;
+}
+.counter h2 {
+  font-size: 3em;
+  margin: 0;
+}
+.counter h4 {
+  font-size: 1.5em;
+  color: #666;
 }
 /* champion Instructor */
 #chmIns{
@@ -63,23 +142,81 @@ p {
     color: lightcoral;
 }
 /* Gallerys */
-.pic .container .row .col img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
+.pic .container .row .col img,
 .pic .container .row .col video {
+  transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/*  Register form */
-.bio{
-  padding: 20px  100px 20px;  
-
+.pic .container .row .col img:hover,
+.pic .container .row .col video:hover {
+  transform: scale(1.1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+/* Register form */
+.bio {
+  padding: 20px 100px 20px;
+  background-image: linear-gradient(to right, #FFFFFF, #FF0000);
+}
+
+.bio .container {
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.bio form {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bio form label {
+  font-weight: bold;
+}
+
+.bio form input[type="text"],
+.bio form input[type="email"],
+.bio form select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.bio form select {
+  appearance: none; /* Remove default select styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000' width='18px' height='18px'%3e%3cpath d='M7 10l5 5 5-5H7z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+
+.bio form .btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #dc3545; 
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bio form .btn:hover {
+  background-color: #4CAF50; 
+}
+
+.bio form .vacancy-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 
 /* Classes & Trainer  */
 #class {
@@ -161,4 +298,94 @@ p {
 .team .pro p {
   font-size: 14px;
   color: #777;
+}
+
+
+
+.Tech:hover #c1 ,#c2 {
+  transform: translateY(-4px);
+}
+
+.Tech .phot #c1 ,#c2{
+  overflow: hidden;
+}
+
+.Tech:hover #c2 {
+  transform: translateY(-4px);
+}
+
+.Tech .phot #c2{
+  overflow: hidden;
+}
+
+/* BMI calcultor  */
+.bmi-calculator {
+  max-width: 500px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px double;
+  border-radius: 10px;
+  max-height: 470px;
+  background-color: #FFF8E8;
+}
+.bmi-calculator h2 {
+  text-align: center;
+  color: #35383c;
+}
+.bmi-calculator label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+.bmi-calculator input[type="number"],
+.bmi-calculator select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.bmi-calculator button {
+  width: 100%;
+  padding: 10px;
+  background-color: #aaada3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bmi-calculator button:hover {
+  background-color: #0c2a4b;
+}
+.bmi-result {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+/* coaches  */
+.rounded-oval {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+.shadow{
+  background-color: #FFF8E8;
+}
+.coach1 {
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 30px;
+}
+.text-primary {
+  color: #474341 !important;
+}
+
+.text-secondary {
+  color: #474341  !important;
 }
