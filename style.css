@@ -74,7 +74,7 @@ button {
 }
 
 #btn_signin {
-  background-color: #FCD581;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -90,7 +90,7 @@ button {
   
 border-radius: 8px;
  border-color: rgb(56, 62, 48); 
- height: 46px;
+ height: 41px;
 }
 /*  about us text   */
 #abtus{
@@ -160,7 +160,8 @@ p {
 /* Register form */
 .bio {
   padding: 20px 100px 20px;
-  background-image: linear-gradient(to right, #FFFFFF, #FF0000);
+  background-image: url('images/join.jpg ');
+
 }
 
 .bio .container {
@@ -217,50 +218,7 @@ p {
   font-weight: bold;
 }
 /* About US */
-/* * {
-  margin: 0;
-  padding: 0;
-  --primary-Color: #f00000;
-  --Secondry-Color: #2D3142;
-  --color2: #FFF8E8;
-  --color3: #FCD581;
-}
 
-.maincarosal {
-  padding-bottom: 600px;
-  padding-left: 450px;
-}
-
-#fitclr {
-  color: red;
-}
-
-#btn1 {
-  border-color: aliceblue;
-  border-radius: 4px;
-  background-color: rgb(75, 110, 22);
-  border-style: groove;
-}
-
-#btn2 {
-  background-color: rgb(15, 229, 229);
-  border-radius: 4px;
-  border-style: groove;
-}
-
-.counter1 h2 {
-  font-size: 60px;
-}
-
-.counter2 {
-  padding: 20px 100px 20px;
-}
-
-.counter3 {
-  padding: 20px 100px 20px;
-} */
-
-/* About us page Start */
 
 .About {
   background-image: url('images/p3.jpg');
@@ -445,8 +403,39 @@ p {
   margin-bottom: 20px;
   
 }
+/*  In about us courasoul  */
+.main{
+  padding: 70px 100px 70px;
+}
+.logos-slide {
+  white-space: nowrap;
+  animation: 20s slide infinite linear;
+}
 
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
 
+.logos-slide img {
+  height: 60px;
+  margin: 0 50px;
+}
+
+.card {
+white-space: wrap;
+min-width: 400px;
+margin: 0 10px;
+}
+
+@keyframes slide {
+from{
+   transform: translateX(0);
+}
+
+to {
+ transform: translateX(-100%);
+}
+}
 
 
 /* Testimonial carosal */
