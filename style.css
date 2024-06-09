@@ -73,12 +73,12 @@ button {
   background-color:rgb(50, 55, 42);
 }
 
-#btn2 {
+#btn_signin {
   background-color: #FCD581;
   color: white;
 }
 
-#btn2:hover {
+#btn_signin:hover {
   background-color: rgb(50, 55, 42);
 }
 
@@ -86,7 +86,7 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#btn2{
+#btn_signin{
   
 border-radius: 8px;
  border-color: rgb(56, 62, 48); 
@@ -216,7 +216,331 @@ p {
   margin-top: 10px;
   font-weight: bold;
 }
+/* About US */
+/* * {
+  margin: 0;
+  padding: 0;
+  --primary-Color: #f00000;
+  --Secondry-Color: #2D3142;
+  --color2: #FFF8E8;
+  --color3: #FCD581;
+}
 
+.maincarosal {
+  padding-bottom: 600px;
+  padding-left: 450px;
+}
+
+#fitclr {
+  color: red;
+}
+
+#btn1 {
+  border-color: aliceblue;
+  border-radius: 4px;
+  background-color: rgb(75, 110, 22);
+  border-style: groove;
+}
+
+#btn2 {
+  background-color: rgb(15, 229, 229);
+  border-radius: 4px;
+  border-style: groove;
+}
+
+.counter1 h2 {
+  font-size: 60px;
+}
+
+.counter2 {
+  padding: 20px 100px 20px;
+}
+
+.counter3 {
+  padding: 20px 100px 20px;
+} */
+
+/* About us page Start */
+
+.About {
+  background-image: url('images/p3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.About .col {
+  height: 400px;
+  width: 100%;
+}
+
+.About .row {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #111111;
+  opacity: 0.7;
+}
+
+.page-title {
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  color: white;
+}
+
+.section-title-2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #29282d;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.text-side {
+  padding: 20px 50px 20px 0;
+}
+
+.text-side h3::before,
+.about-heading::after {
+  content: " ";
+  border: 2px solid red;
+  display: block;
+  width: 10%;
+  margin: 10px 0;
+}
+
+.progress-bar .bar {
+  background-color: rgb(187, 187, 187);
+  border-radius: 10px;
+}
+
+.progress-bar .bar-inner {
+  background-color: rgb(255, 67, 67);
+  border-radius: 10px;
+  animation-name: Gym;
+  animation-duration: 2s;
+}
+
+.progress-bar {
+  background-color: white;
+  padding: 10px 0 10px;
+  font-size: 10px;
+}
+
+.progress-bar .bar-2 {
+  background-color: rgb(187, 187, 187);
+  border-radius: 10px;
+}
+
+.progress-bar .bar-inner-2 {
+  background-color: rgb(255, 67, 67);
+  border-radius: 10px;
+  animation-name: Yoga;
+  animation-duration: 2s;
+}
+
+.progress-bar .bar-3 {
+  background-color: rgb(187, 187, 187);
+  border-radius: 10px;
+}
+
+.progress-bar .bar-inner-3 {
+  background-color: rgb(255, 67, 67);
+  border-radius: 10px;
+  animation-name: Warmup;
+  animation-duration: 2s;
+}
+
+@keyframes Gym {
+  from {width: 0%; height: 20%;}
+  to {width: 75%; height: 20%;}
+}
+
+@keyframes Yoga {
+  from {width: 0%;}
+  to {width: 85%;}
+}
+
+@keyframes Warmup {
+  from {width: 0%;}
+  to {width: 82%;}
+}
+
+#join {
+  background-color: #4CAF50;
+  color: white;
+  margin-right: 10px;
+}
+
+#join a {
+  color: white;
+  text-decoration: none;
+}
+
+#join:hover {
+  background-color:rgb(50, 55, 42);
+}
+
+.section-2-img .image-container {
+  position: relative;
+
+}
+
+.section-2-img .image-container::before {
+  content: "";
+  background: #c23c3c;
+  opacity: 1;
+
+  
+}
+
+.animation .line {
+  z-index: 1;
+  float: left;
+  width: 25%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  border-right: 2px solid red;
+  animation: moveLine 3s ease-in-out infinite;
+}
+
+.line.one { top: 0; left: 25%; }
+.line.two { top: 0; left: 50%; }
+.line.three { top: 0; }
+
+.animation-back .line{
+  z-index: 0;
+  float: left;
+  width: 25%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  border-right: 2px solid rgb(224, 224, 224);
+}
+
+@keyframes moveLine {
+  from{top :0%; height :25%}
+  to{top:75%; height: 25%;}
+
+}
+.section-3 .row .col h3{
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  padding: 0px 270px 0px;
+  font-weight: bold;
+
+}
+
+.section-3 .row .col h3::before{
+
+  content: " ";
+  border: 2px solid red;
+  display: block;
+  width: 10%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+}
+
+
+
+
+/* Testimonial carosal */
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-borders span {
+  height: 5px;
+  background: #6aaf08;
+  width: 40px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.section-borders span.black-border {
+  background: #333;
+  width: 30px;
+  margin: 0 6px;
+
+}
+
+.client-testimonial-carousel .owl-dots button {
+  height: 5px;
+  background: #6aaf08 !important;
+  width: 20px;
+  display: inline-block;
+  margin: 5px;
+  transition: .2s;
+  border-radius: 2px;
+}
+
+.client-testimonial-carousel button.owl-dot.active {
+  background: #000 !important;
+  width: 30px;
+}
+
+.client-testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 25px
+}
+
+.single-testimonial-item {
+  position: relative;
+  box-shadow: 0 0 2px #dadfd3;
+  margin: 2px;
+  padding: 20px;
+  font-style: italic;
+  padding-left: 85px;
+}
+
+.single-testimonial-item:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 20px;
+  color: #6aaf08;
+  line-height: 30px;
+  margin-top: -15px;
+}
+
+.single-testimonial-item:after {
+  background: #ddd;
+  content: "";
+  height: 70%;
+  left: 60px;
+  position: absolute;
+  top: 10%;
+  width: 1px;
+}
+
+.single-testimonial-item h3 {
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.single-testimonial-item h3 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* About us page end */
 
 /* Classes & Trainer  */
 #class {
@@ -359,7 +683,7 @@ p {
 }
 .bmi-result {
   text-align: center;
-  margin-top: 20px;
+  margin-right: 20px;
   color: #333;
 }
 
@@ -389,3 +713,67 @@ p {
 .text-secondary {
   color: #474341  !important;
 }
+/* Login css */
+#login {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #2D3142;
+}
+#login_container{
+  display: flex;
+  justify-content: center;
+  padding: 70px  100px 70px;
+}
+.login_card {
+  display: flex;
+  border-radius: 16px;
+  background-color: #FFF8E8;
+
+}
+
+.card-body {
+  padding: 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-outline {
+  margin-bottom: 1.5rem;
+}
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+.form-label {
+  font-size: 0.875rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #2D3142;
+}
+.h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  padding-left: 10px;
+}
+.small {
+  font-size: 0.875rem;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.fw-normal {
+  font-weight: normal;
+} 
